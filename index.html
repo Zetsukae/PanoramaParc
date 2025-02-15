@@ -27,6 +27,11 @@
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
         }
 
+        .container-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
         .container {
             background: rgba(0, 0, 0, 0.6);
             padding: 30px;
@@ -68,17 +73,34 @@
             font-size: 16px;
             opacity: 0.8;
         }
+
+        @media (max-width: 800px) {
+            .container-wrapper {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="title">Ancien parc du Panorama à Vevey, Suisse.</div>
 
-    <div class="container">
-        <h1>Monde Minecraft</h1>
-        <p>Clique sur le bouton ci-dessous pour télécharger le monde :</p>
-        <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
-            Télécharger
-        </a>
+    <div class="container-wrapper">
+        <div class="container">
+            <h1>Version actuelle</h1>
+            <p>Clique sur le bouton ci-dessous pour télécharger :</p>
+            <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
+                Télécharger v. 0.2
+            </a>
+        </div>
+
+        <div class="container">
+            <h1>Ancienne version</h1>
+            <p>Clique sur le bouton ci-dessous pour télécharger :</p>
+            <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
+                Télécharger v. 0.1
+            </a>
+        </div>
     </div>
 
     <div class="footer">Créé et supervisé par @Zetsukae</div>
