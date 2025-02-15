@@ -77,7 +77,6 @@
         .discord-btn {
             background: #5865F2;
             color: white;
-            margin-top: 15px;
         }
 
         .discord-btn:hover {
@@ -96,6 +95,18 @@
             max-width: 800px;
             backdrop-filter: blur(10px);
             margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .patch-content {
+            flex: 1;
+        }
+
+        .discord-container {
+            flex: 0 0 auto;
+            margin-left: 20px;
         }
 
         /* Pied de page */
@@ -113,6 +124,15 @@
             }
             .card {
                 width: 80%;
+            }
+            .patch-notes {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .discord-container {
+                margin-left: 0;
+                margin-top: 15px;
             }
         }
     </style>
@@ -133,7 +153,7 @@
         <div class="card">
             <h1>Ancienne version</h1>
             <p>Clique sur le bouton ci-dessous pour télécharger :</p>
-            <a class="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
+            <a class="download-btn" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
                 Télécharger v. 0.1
             </a>
         </div>
@@ -141,21 +161,25 @@
 
     <!-- Patch Notes -->
     <div class="patch-notes">
-        <h1>Mise à Jour</h1>
-        <p><strong>Version 0.2 :</strong></p>
-        <ul>
-            <li>Ajout de nouveaux bâtiments</li>
-            <li>Correction de bugs mineurs</li>
-            <li>Amélioration du terrain</li>
-        </ul>
-        <p><strong>Version 0.1 :</strong></p>
-        <ul>
-            <li>Version initiale du parc</li>
-            <li>Ajout des premières structures</li>
-        </ul>
-        <a class="discord-btn" href="https://discord.gg/u3SwvGVvGD" target="_blank">
-            Rejoindre notre Discord
-        </a>
+        <div class="patch-content">
+            <h1>Mise à Jour</h1>
+            <p><strong>Version 0.2 :</strong></p>
+            <ul>
+                <li>Ajout de nouveaux bâtiments</li>
+                <li>Correction de bugs mineurs</li>
+                <li>Amélioration du terrain</li>
+            </ul>
+            <p><strong>Version 0.1 :</strong></p>
+            <ul>
+                <li>Version initiale du parc</li>
+                <li>Ajout des premières structures</li>
+            </ul>
+        </div>
+        <div class="discord-container">
+            <a class="discord-btn" href="https://discord.gg/u3SwvGVvGD" target="_blank">
+                Rejoindre notre Discord
+            </a>
+        </div>
     </div>
 
     <div class="footer">Créé et supervisé par @Zetsukae</div>
