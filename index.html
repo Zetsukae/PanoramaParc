@@ -5,43 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Télécharger le monde Minecraft</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: url('https://github.com/Zetsukae/OldPanoramaParc/blob/main/minecraft-fond.jpeg?raw=true') no-repeat center center fixed;
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            background: url('https://raw.githubusercontent.com/Zetsukae/OldPanoramaParc/main/minecraft-fond.jpeg') no-repeat center center fixed; 
             background-size: cover;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        a {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #4CAF50;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 350px;
         }
-        a:hover {
-            background: #45a049;
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
         }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        a { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background: #4CAF50; 
+            color: white; 
+            text-decoration: none; 
+            font-size: 18px; 
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover { 
+            background: #45a049; 
+        }
+
         .footer {
             position: fixed;
             bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 20px;
             font-size: 14px;
             opacity: 0.7;
         }
     </style>
 </head>
 <body>
-    <h1>Monde Minecraft</h1>
-    <p>Clique sur le bouton ci-dessous pour télécharger le monde :</p>
-    <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>Télécharger</a>
+    <div class="container">
+        <h1>Monde Minecraft</h1>
+        <p>Clique sur le bouton ci-dessous pour télécharger le monde :</p>
+        <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
+            Télécharger
+        </a>
+    </div>
+
     <div class="footer">Zetsukae</div>
 </body>
 </html>
