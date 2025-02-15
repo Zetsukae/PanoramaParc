@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancien parc du Panorama</title>
-    <link rel="icon" href="https://i.imgur.com/Qy60kML.png">
+    <title>Ancien parc du Panorama - Vevey</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Qy60kML.png">
     <style>
+        /* Style général */
         body { 
             font-family: Arial, sans-serif; 
             text-align: center; 
@@ -17,46 +18,39 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
-            padding: 20px;
         }
 
         .title {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
         }
 
+        /* Conteneur principal */
         .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+        }
+
+        .box {
             background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
+            padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             text-align: center;
-            width: 90%;
-            max-width: 350px;
-            margin-bottom: 15px;
+            width: 350px;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .updates {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            width: 90%;
-            max-width: 400px;
-            margin-bottom: 15px;
-        }
-
-        .updates .inner-box {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 10px;
-            text-align: left;
-            margin-top: 10px;
+        .box:hover {
+            transform: scale(1.05);
         }
 
         h1 {
@@ -65,102 +59,124 @@
         }
 
         p {
-            font-size: 16px;
-            margin-bottom: 15px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
-        .download-btn, .discord-btn { 
+        /* Boutons */
+        a { 
             display: inline-block; 
-            padding: 12px 25px; 
-            font-size: 16px; 
-            font-weight: bold;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .download-btn {
+            padding: 15px 30px; 
             background: #4CAF50; 
-            color: white;
+            color: white; 
+            text-decoration: none; 
+            font-size: 18px; 
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
         }
 
-        .download-btn:hover { background: #45a049; }
-
-        .discord-btn {
-            background: #5865F2;
-            color: white;
-            margin-top: 10px;
-            display: block;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
+        a:hover { 
+            background: #45a049;
+            transform: scale(1.1);
         }
 
-        .discord-btn:hover { background: #4855c7; }
+        .button-blue {
+            background: #007BFF;
+        }
 
-        .footer {
-            font-size: 14px;
-            opacity: 0.8;
+        .button-blue:hover {
+            background: #0056b3;
+        }
+
+        /* Section mise à jour */
+        .update-box {
+            width: 100%;
+            max-width: 750px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
             margin-top: 20px;
         }
 
-        @media (min-width: 768px) {
-            .download-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
+        .update-content {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
 
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
             .container {
-                width: 350px;
+                flex-direction: column;
             }
-
-            .updates {
-                width: 400px;
+            .box {
+                width: 90%;
+            }
+            .update-box {
+                width: 90%;
             }
         }
     </style>
 </head>
 <body>
+
     <div class="title">Ancien parc du Panorama à Vevey, Suisse.</div>
 
-    <div class="download-container">
-        <div class="container">
-            <h1>Version actuelle</h1>
-            <p>Clique sur le bouton ci-dessous pour télécharger :</p>
-            <a class="download-btn" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
+    <div class="container">
+        <!-- Version actuelle -->
+        <div class="box">
+            <h1>Version Actuelle</h1>
+            <p>Cliquez pour télécharger la dernière version :</p>
+            <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
                 Télécharger v. 0.2
             </a>
         </div>
 
-        <div class="container">
-            <h1>Ancienne version</h1>
-            <p>Clique sur le bouton ci-dessous pour télécharger :</p>
-            <a class="download-btn" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
+        <!-- Ancienne version -->
+        <div class="box">
+            <h1>Ancienne Version</h1>
+            <p>Téléchargez l’ancienne version :</p>
+            <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
                 Télécharger v. 0.1
             </a>
         </div>
     </div>
 
-    <div class="updates">
+    <!-- Mise à jour -->
+    <div class="update-box">
         <h1>Mise à Jour</h1>
-        <div class="inner-box">
-            <h3>Version 0.2 :</h3>
+        <div class="update-content">
+            <p><strong>Version 0.2 :</strong></p>
             <ul>
-                <li>Ajout de nouveaux bâtiments</li>
-                <li>Correction de bugs mineurs</li>
-                <li>Amélioration du terrain</li>
+                <li>Ajout de nouveaux bâtiments.</li>
+                <li>Amélioration du terrain.</li>
+                <li>Correction de bugs mineurs.</li>
             </ul>
 
-            <h3>Version 0.1 :</h3>
+            <p><strong>Version 0.1 :</strong></p>
             <ul>
-                <li>Version initiale du parc</li>
-                <li>Ajout des premières structures</li>
+                <li>Version initiale du parc.</li>
             </ul>
         </div>
-        <a class="discord-btn" href="https://discord.gg/u3SwvGVvGD" target="_blank">Rejoindre notre Discord</a>
+        
+        <!-- Bouton Discord -->
+        <a class="button-blue" href="https://discord.gg/u3SwvGVvGD" target="_blank">
+            Rejoindre notre Discord
+        </a>
     </div>
 
     <div class="footer">Créé et supervisé par @Zetsukae</div>
+
 </body>
 </html>
