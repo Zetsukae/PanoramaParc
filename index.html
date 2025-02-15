@@ -13,10 +13,18 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
         }
 
         .container {
@@ -55,15 +63,16 @@
         }
 
         .footer {
-            position: fixed;
+            position: absolute;
             bottom: 10px;
-            right: 20px;
-            font-size: 14px;
-            opacity: 0.7;
+            font-size: 16px;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
+    <div class="title">Ancien parc du Panorama à Vevey, Suisse.</div>
+
     <div class="container">
         <h1>Monde Minecraft</h1>
         <p>Clique sur le bouton ci-dessous pour télécharger le monde :</p>
@@ -72,6 +81,6 @@
         </a>
     </div>
 
-    <div class="footer">Zetsukae</div>
+    <div class="footer">Créé et supervisé par @Zetsukae</div>
 </body>
 </html>
