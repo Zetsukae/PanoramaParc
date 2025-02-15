@@ -52,12 +52,10 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Style du bouton */
-        .download-btn {
+        /* Style des boutons */
+        .download-btn, .discord-btn {
             display: inline-block;
             padding: 15px 30px;
-            background: #4CAF50;
-            color: white;
             text-decoration: none;
             font-size: 18px;
             border-radius: 8px;
@@ -66,8 +64,24 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
+        .download-btn {
+            background: #4CAF50;
+            color: white;
+        }
+
         .download-btn:hover {
             background: #45a049;
+            transform: scale(1.05);
+        }
+
+        .discord-btn {
+            background: #5865F2;
+            color: white;
+            margin-top: 15px;
+        }
+
+        .discord-btn:hover {
+            background: #4a57e2;
             transform: scale(1.05);
         }
 
@@ -86,7 +100,7 @@
 
         /* Pied de page */
         .footer {
-            margin-top: 20px;
+            margin-top: 40px;
             font-size: 16px;
             opacity: 0.8;
         }
@@ -119,7 +133,7 @@
         <div class="card">
             <h1>Ancienne version</h1>
             <p>Clique sur le bouton ci-dessous pour télécharger :</p>
-            <a class="download-btn" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
+            <a class="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
                 Télécharger v. 0.1
             </a>
         </div>
@@ -139,6 +153,9 @@
             <li>Version initiale du parc</li>
             <li>Ajout des premières structures</li>
         </ul>
+        <a class="discord-btn" href="https://discord.gg/u3SwvGVvGD" target="_blank">
+            Rejoindre notre Discord
+        </a>
     </div>
 
     <div class="footer">Créé et supervisé par @Zetsukae</div>
