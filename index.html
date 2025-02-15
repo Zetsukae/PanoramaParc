@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancien parc du Panorama - Vevey</title>
+    <title>Ancien parc du Panorama</title>
     <link rel="icon" type="image/png" href="https://i.imgur.com/Qy60kML.png">
     <style>
-        /* Style général */
         body { 
             font-family: Arial, sans-serif; 
             text-align: center; 
@@ -29,41 +28,32 @@
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
         }
 
-        /* Conteneur principal */
-        .container {
+        .download-container {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
             justify-content: center;
-            align-items: center;
-            max-width: 800px;
+            gap: 20px;
+            margin-bottom: 20px;
         }
 
-        .box {
+        .container {
             background: rgba(0, 0, 0, 0.6);
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             text-align: center;
             width: 350px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .box:hover {
-            transform: scale(1.05);
         }
 
         h1 {
             margin: 0 0 10px;
-            font-size: 24px;
+            font-size: 22px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 20px;
         }
 
-        /* Boutons */
         a { 
             display: inline-block; 
             padding: 15px 30px; 
@@ -87,25 +77,26 @@
 
         .button-blue:hover {
             background: #0056b3;
+            transform: scale(1.1);
         }
 
-        /* Section mise à jour */
-        .update-box {
-            width: 100%;
-            max-width: 750px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
+        .update-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             text-align: center;
+            width: 740px;
             margin-top: 20px;
         }
 
-        .update-content {
+        .update-box {
             background: rgba(255, 255, 255, 0.2);
             padding: 15px;
             border-radius: 10px;
             margin-top: 10px;
+            text-align: left;
+            font-size: 14px;
         }
 
         .footer {
@@ -115,68 +106,55 @@
             opacity: 0.8;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
+        @media (max-width: 800px) {
+            .download-container {
                 flex-direction: column;
             }
-            .box {
-                width: 90%;
-            }
-            .update-box {
+            .update-container {
                 width: 90%;
             }
         }
     </style>
 </head>
 <body>
-
     <div class="title">Ancien parc du Panorama à Vevey, Suisse.</div>
 
-    <div class="container">
-        <!-- Version actuelle -->
-        <div class="box">
+    <div class="download-container">
+        <div class="container">
             <h1>Version Actuelle</h1>
-            <p>Cliquez pour télécharger la dernière version :</p>
+            <p>Télécharge la dernière version :</p>
             <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
                 Télécharger v. 0.2
             </a>
         </div>
 
-        <!-- Ancienne version -->
-        <div class="box">
+        <div class="container">
             <h1>Ancienne Version</h1>
-            <p>Téléchargez l’ancienne version :</p>
+            <p>Télécharge l'ancienne version :</p>
             <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>
                 Télécharger v. 0.1
             </a>
         </div>
     </div>
 
-    <!-- Mise à jour -->
-    <div class="update-box">
-        <h1>Mise à Jour</h1>
-        <div class="update-content">
+    <div class="update-container">
+        <h1>Mise à jour</h1>
+        <div class="update-box">
             <p><strong>Version 0.2 :</strong></p>
             <ul>
-                <li>Ajout de nouveaux bâtiments.</li>
-                <li>Amélioration du terrain.</li>
-                <li>Correction de bugs mineurs.</li>
+                <li>Ajout de nouveaux bâtiments</li>
+                <li>Amélioration des textures</li>
+                <li>Optimisation des performances</li>
             </ul>
-
             <p><strong>Version 0.1 :</strong></p>
             <ul>
-                <li>Version initiale du parc.</li>
+                <li>Première version du parc</li>
             </ul>
         </div>
-        
-        <!-- Bouton Discord -->
-        <a class="button-blue" href="https://discord.gg/u3SwvGVvGD" target="_blank">
-            Rejoindre notre Discord
-        </a>
+        <br>
+        <a class="button-blue" href="https://discord.gg/u3SwvGVvGD">Rejoindre notre Discord</a>
     </div>
 
     <div class="footer">Créé et supervisé par @Zetsukae</div>
-
 </body>
 </html>
