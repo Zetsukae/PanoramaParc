@@ -40,7 +40,7 @@
             max-width: 900px;
         }
 
-        /* Style des cartes (boîtes) */
+        /* Style des cartes */
         .card {
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
@@ -90,23 +90,30 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: left;
             width: 85%;
             max-width: 800px;
             backdrop-filter: blur(10px);
             margin-top: 20px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
         }
 
+        /* Petit carré plus clair à l'intérieur */
         .patch-content {
-            flex: 1;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 700px;
+            text-align: left;
+            backdrop-filter: blur(15px);
         }
 
+        /* Discord button container */
         .discord-container {
-            flex: 0 0 auto;
-            margin-left: 20px;
+            margin-top: 15px;
+            text-align: center;
         }
 
         /* Pied de page */
@@ -125,14 +132,8 @@
             .card {
                 width: 80%;
             }
-            .patch-notes {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .discord-container {
-                margin-left: 0;
-                margin-top: 15px;
+            .patch-content {
+                width: 95%;
             }
         }
     </style>
@@ -159,10 +160,10 @@
         </div>
     </div>
 
-    <!-- Patch Notes -->
+    <!-- Patch Notes avec sous-carré plus clair -->
     <div class="patch-notes">
+        <h1>Mise à Jour</h1>
         <div class="patch-content">
-            <h1>Mise à Jour</h1>
             <p><strong>Version 0.2 :</strong></p>
             <ul>
                 <li>Ajout de nouveaux bâtiments</li>
@@ -175,6 +176,8 @@
                 <li>Ajout des premières structures</li>
             </ul>
         </div>
+        
+        <!-- Bouton Discord -->
         <div class="discord-container">
             <a class="discord-btn" href="https://discord.gg/u3SwvGVvGD" target="_blank">
                 Rejoindre notre Discord
