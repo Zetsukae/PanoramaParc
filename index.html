@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Télécharger le monde Minecraft</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        a { display: inline-block; padding: 10px 20px; background: #4CAF50; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; }
-        a:hover { background: #45a049; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #45a049;
+        }
     </style>
 </head>
 <body>
-    <h1>Monde Minecraft</h1>
-    <p>Clique sur le bouton ci-dessous pour télécharger le monde :</p>
-    <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>Télécharger</a>
+    <div class="container">
+        <h1>Monde Minecraft</h1>
+        <p>Clique sur le bouton ci-dessous pour télécharger le monde :</p>
+        <a class="download-btn" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld" download>Télécharger</a>
+    </div>
 </body>
 </html>
