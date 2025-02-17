@@ -3,54 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancien Parc du Panorama - Vevey</title>
-    <link rel="icon" type="image/png" href="https://i.imgur.com/Qy60kML.png">
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS externe -->
+    <title>Ancien Parc du Panorama - Téléchargements</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="title">Ancien Parc du Panorama à Vevey, Suisse.</div>
+
+    <h1 class="title">Ancien Parc du Panorama à Vevey, Suisse.</h1>
 
     <div class="container">
-        <h1>Téléchargements</h1>
+        <!-- Section Téléchargements -->
+        <div class="box">
+            <h2>Téléchargements</h2>
 
-        <!-- Bouton pour la version récente (0.3) -->
-        <div class="latest-version">
-            <h2>Version Récente</h2>
-            <p>La dernière version disponible du parc :</p>
-            <a id="download-latest" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld" download>
-                Télécharger la Version 0.3
-            </a>
+            <div class="latest-version">
+                <h3>Version Récente</h3>
+                <p>La dernière version disponible du parc :</p>
+                <a class="download-button" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld">
+                    Télécharger la Version 0.3
+                </a>
+            </div>
+
+            <div class="old-versions">
+                <h3>Anciennes Versions</h3>
+                <p>Choisissez une version plus ancienne :</p>
+                <select id="version-select">
+                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Version 0.2</option>
+                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld">Version 0.1</option>
+                </select>
+                <a id="download-old" class="download-button" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Télécharger</a>
+            </div>
         </div>
 
-        <!-- Menu déroulant pour les anciennes versions -->
-        <div class="old-versions">
-            <h2>Anciennes Versions</h2>
-            <p>Choisissez une version plus ancienne :</p>
-            <div class="select-container">
-                <select id="version-select">
-                    <option value="0.2">Version 0.2</option>
-                    <option value="0.1">Version 0.1</option>
-                </select>
+        <!-- Section Patch Notes -->
+        <div class="box">
+            <h2>Patch Notes</h2>
+            <div class="patch-notes">
+                <h3>Version 0.3</h3>
+                <p>- Ajout de nouvelles attractions</p>
+                <p>- Optimisation des performances</p>
+
+                <h3>Version 0.2</h3>
+                <p>- Corrections de bugs</p>
+                <p>- Amélioration de la texture du parc</p>
+
+                <h3>Version 0.1</h3>
+                <p>- Première version du parc</p>
             </div>
-            <a id="download-old" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
-                Télécharger
+
+            <a class="discord-button" href="https://discord.gg/u3SwvGVvGD">
+                Rejoindre notre Discord
             </a>
         </div>
     </div>
 
     <script>
-        function updateDownloadLink() {
-            let selectedVersion = document.getElementById("version-select").value;
-            let downloadLink = document.getElementById("download-old");
-
-            if (selectedVersion === "0.2") {
-                downloadLink.href = "https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld";
-            } else {
-                downloadLink.href = "https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld";
-            }
-        }
-
-        document.getElementById("version-select").addEventListener("change", updateDownloadLink);
+        document.getElementById("version-select").addEventListener("change", function() {
+            document.getElementById("download-old").href = this.value;
+        });
     </script>
+
 </body>
 </html>
