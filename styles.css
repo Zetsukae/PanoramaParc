@@ -9,10 +9,24 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     text-align: center;
+}
+
+/* Titre principal bien centré */
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f1c40f; /* Jaune Minecraft */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 /* Conteneur principal */
@@ -23,15 +37,6 @@ body {
     color: #fff;
     max-width: 500px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Titre principal bien visible */
-.title {
-    font-size: 28px;
-    font-weight: 600;
-    color: #f1c40f; /* Jaune style Minecraft */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
 }
 
 /* Titres secondaires */
@@ -49,7 +54,7 @@ h2 {
     color: #ffffff;
 }
 
-/* Bouton de téléchargement récent */
+/* Boutons de téléchargement (version récente + anciennes versions) */
 #download-latest, .download-old {
     display: inline-block;
     padding: 12px 20px;
@@ -66,7 +71,7 @@ h2 {
     background: #27ae60;
 }
 
-/* Style du menu déroulant */
+/* Liste déroulante */
 select {
     width: 100%;
     padding: 10px;
