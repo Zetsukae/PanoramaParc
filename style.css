@@ -1,114 +1,126 @@
-/* Ajout du fond d'écran Minecraft */
+/* Importation d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Réinitialisation et styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     background: url('https://i.imgur.com/audGuAN.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    color: white;
+    text-align: center;
 }
 
-/* Titre principal */
+/* ✅ TITRE PRINCIPAL */
 .title {
     font-size: 28px;
-    font-weight: bold;
-    color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 20px;
-    text-align: center;
-}
-
-/* Conteneur principal avec les deux blocs côte à côte */
-.content-wrapper {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-/* Styles des deux blocs (Téléchargements & Patch Notes) */
-.container, .patch-notes {
-    background: rgba(0, 0, 0, 0.75);
-    padding: 30px;
-    border-radius: 15px;
-    color: #fff;
-    max-width: 450px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Titres */
-h1, h2 {
-    font-size: 22px;
     font-weight: 600;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* ✅ CONTAINER FLEXIBLE */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les boîtes */
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+/* ✅ STYLES DES BLOCS */
+.box {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ STYLES DES TITRES DANS LES BLOCS */
+.box h2 {
+    font-size: 22px;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #1db954;
 }
 
-/* Liste des patch notes */
-.patch-list {
-    list-style: none;
-    padding: 0;
-}
-
-.patch-list li {
-    background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* Boutons de téléchargement */
-a#download-latest, a.download-old {
+/* ✅ BOUTONS GÉNÉRAUX */
+.button {
     display: inline-block;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
     border-radius: 10px;
-    text-align: center;
-    transition: background 0.3s ease;
-}
-
-a#download-latest {
-    background: #2ecc71;
-    color: white;
-}
-
-a#download-latest:hover {
-    background: #27ae60;
-}
-
-a.download-old {
-    background: #2ecc71;
-    color: white;
-}
-
-a.download-old:hover {
-    background: #27ae60;
-}
-
-/* Bouton Discord */
-.discord-btn {
-    display: inline-block;
-    width: 100%;
-    padding: 12px 20px;
-    background: #5865F2;
+    padding: 12px 18px;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
     font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 20px;
-    transition: background 0.3s ease;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
-.discord-btn:hover {
+/* ✅ BOUTON DE TÉLÉCHARGEMENT (VERT) */
+.download-button {
+    background: #1db954;
+}
+
+.download-button:hover {
+    background: #17a74b;
+}
+
+/* ✅ BOUTON DISCORD (BLEU) */
+.discord-button {
+    background: #5865F2;
+}
+
+.discord-button:hover {
     background: #4752C4;
+}
+
+/* ✅ LISTE DEROULANTE (SELECT) */
+select {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ✅ LIEN BLEU DES VERSIONS ANCIENNES */
+.download-old {
+    color: #1db9ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.download-old:hover {
+    text-decoration: underline;
+}
+
+/* ✅ RESPONSIVE POUR PETITS ÉCRANS */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        width: 90%;
+    }
 }
