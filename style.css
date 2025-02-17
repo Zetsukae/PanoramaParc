@@ -1,0 +1,46 @@
+<style>
+/* Conteneur du select */
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Personnalisation du select */
+select {
+    appearance: none; /* Supprime le style par défaut */
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    text-align: center;
+}
+
+/* Icône de flèche personnalisée */
+.select-container::after {
+    content: "▼"; /* Flèche */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+    pointer-events: none; /* Empêche l'interaction */
+}
+
+/* Effet au survol */
+select:hover {
+    background-color: #333;
+}
+
+/* Style des options */
+select option {
+    background: #222;
+    color: white;
+    padding: 10px;
+}
+</style>
