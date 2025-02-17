@@ -12,24 +12,33 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    text-align: center;
 }
 
 /* Conteneur principal */
 .container {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
     padding: 30px;
     border-radius: 15px;
     color: #fff;
     max-width: 500px;
-    text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Titres */
+/* Titre principal bien visible */
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f1c40f; /* Jaune style Minecraft */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Titres secondaires */
 h1 {
     font-size: 24px;
     font-weight: 600;
-    color: #f1c40f; /* Or Minecraft */
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
@@ -40,11 +49,11 @@ h2 {
     color: #ffffff;
 }
 
-/* Bouton de téléchargement */
-#download-latest {
+/* Bouton de téléchargement récent */
+#download-latest, .download-old {
     display: inline-block;
     padding: 12px 20px;
-    background: #2ecc71; /* Vert style herbe Minecraft */
+    background: #2ecc71; /* Vert Minecraft */
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -53,8 +62,8 @@ h2 {
     transition: background 0.3s ease;
 }
 
-#download-latest:hover {
-    background: #27ae60; /* Assombrissement au survol */
+#download-latest:hover, .download-old:hover {
+    background: #27ae60;
 }
 
 /* Style du menu déroulant */
@@ -73,22 +82,4 @@ select {
 
 select:hover {
     background: #333;
-}
-
-/* Bouton de téléchargement pour les anciennes versions */
-.download-old {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    background: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-.download-old:hover {
-    background: #2980b9;
 }
