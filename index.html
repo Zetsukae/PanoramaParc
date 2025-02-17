@@ -162,7 +162,7 @@
                     <option value="0.1">Version 0.1</option>
                 </select>
             </div>
-            <a id="download-old" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.0.2.mcworld" download>
+            <a id="download-old" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" download>
                 Télécharger
             </a>
         </div>
@@ -183,9 +183,8 @@
     <div class="footer">Créé et supervisé par @Zetsukae</div>
 
     <script>
-        // Script pour changer le lien de téléchargement selon la version sélectionnée
-        document.getElementById("version-select").addEventListener("change", function() {
-            let selectedVersion = this.value;
+        function updateDownloadLink() {
+            let selectedVersion = document.getElementById("version-select").value;
             let downloadLink = document.getElementById("download-old");
 
             if (selectedVersion === "0.2") {
@@ -193,7 +192,13 @@
             } else {
                 downloadLink.href = "https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld";
             }
-        });
+        }
+
+        // Mettre à jour le lien dès le chargement de la page
+        document.addEventListener("DOMContentLoaded", updateDownloadLink);
+
+        // Mettre à jour le lien lorsqu'on change la version
+        document.getElementById("version-select").addEventListener("change", updateDownloadLink);
     </script>
 </body>
 </html>
