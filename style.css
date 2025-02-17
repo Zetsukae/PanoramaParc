@@ -1,126 +1,107 @@
-/* Importation d'une police moderne */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Réinitialisation et styles globaux */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+/* Style général */
 body {
-    background: url('https://i.imgur.com/audGuAN.png') no-repeat center center fixed;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp5881782.jpg'); /* Remplace par ton propre fond */
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-position: center;
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* ✅ TITRE PRINCIPAL */
-.title {
-    font-size: 28px;
-    font-weight: 600;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-/* ✅ CONTAINER FLEXIBLE */
+/* Conteneur principal */
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espace entre les boîtes */
-    flex-wrap: wrap;
-    max-width: 800px;
+    gap: 30px;
+    margin-top: 50px;
 }
 
-/* ✅ STYLES DES BLOCS */
-.box {
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 15px;
+/* Styles des cartes */
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
 }
 
-/* ✅ STYLES DES TITRES DANS LES BLOCS */
-.box h2 {
+/* Titres dans les cartes */
+.card h2 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: #1db954;
+    color: #00ff00; /* Vert pour les titres */
 }
 
-/* ✅ BOUTONS GÉNÉRAUX */
-.button {
+/* Liens et boutons */
+a.button, button {
     display: inline-block;
-    border-radius: 10px;
-    padding: 12px 18px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 12px 20px;
     margin-top: 10px;
-    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    cursor: pointer;
 }
 
-/* ✅ BOUTON DE TÉLÉCHARGEMENT (VERT) */
+/* Bouton principal (Téléchargement) */
 .download-button {
-    background: #1db954;
+    background-color: #00a000;
+    color: white;
+    border: none;
 }
 
 .download-button:hover {
-    background: #17a74b;
+    background-color: #008000;
+    transform: scale(1.05);
 }
 
-/* ✅ BOUTON DISCORD (BLEU) */
-.discord-button {
-    background: #5865F2;
-}
-
-.discord-button:hover {
-    background: #4752C4;
-}
-
-/* ✅ LISTE DEROULANTE (SELECT) */
-select {
-    background: rgba(255, 255, 255, 0.2);
+/* Boutons secondaires (Versions anciennes) */
+.version-button {
+    background-color: #444;
     color: white;
     border: none;
+}
+
+.version-button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+/* Style du menu déroulant */
+select {
+    background-color: #333; /* Fond foncé */
+    color: white; /* Texte blanc */
+    border: 2px solid #666; /* Bordure */
     padding: 10px;
-    border-radius: 8px;
-    width: 80%;
-    text-align: center;
+    border-radius: 5px;
     font-size: 16px;
-    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
 }
 
-/* ✅ LIEN BLEU DES VERSIONS ANCIENNES */
-.download-old {
-    color: #1db9ff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
+/* Style des options dans le menu déroulant */
+select option {
+    background-color: #444; /* Fond légèrement plus clair */
+    color: white; /* Texte blanc */
+    padding: 10px;
 }
 
-.download-old:hover {
-    text-decoration: underline;
+/* Style quand on survole une option */
+select option:hover {
+    background-color: #555;
 }
 
-/* ✅ RESPONSIVE POUR PETITS ÉCRANS */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .box {
-        width: 90%;
-    }
+/* Lien Discord */
+.discord-link {
+    background-color: #5865F2;
+    color: white;
+}
+
+.discord-link:hover {
+    background-color: #3b4cca;
 }
