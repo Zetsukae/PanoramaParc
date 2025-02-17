@@ -1,90 +1,70 @@
-/* Import d'une police moderne */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Fond d'écran Minecraft */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: url('https://i.imgur.com/audGuAN.png') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+/* Conteneur principal avec les deux blocs côte à côte */
+.content-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
     justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
-/* Titre principal bien centré */
-.title {
-    font-size: 28px;
-    font-weight: 600;
-    color: #f1c40f; /* Jaune Minecraft */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
-
-/* Conteneur principal */
+/* Styles des deux blocs (Téléchargements & Patch Notes) */
 .container {
     background: rgba(0, 0, 0, 0.75);
     padding: 30px;
     border-radius: 15px;
     color: #fff;
-    max-width: 500px;
+    max-width: 450px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Titres secondaires */
-h1 {
-    font-size: 24px;
+/* Patch Notes */
+.patch-notes {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+    max-width: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Titres */
+h1, h2 {
+    font-size: 22px;
     font-weight: 600;
-    color: #ffffff;
     margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 10px;
     color: #ffffff;
 }
 
-/* Boutons de téléchargement (version récente + anciennes versions) */
-#download-latest, .download-old {
+/* Texte des patch notes */
+.patch-list {
+    list-style: none;
+    padding: 0;
+}
+
+.patch-list li {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Bouton Discord */
+.discord-btn {
     display: inline-block;
+    width: 100%;
     padding: 12px 20px;
-    background: #2ecc71; /* Vert Minecraft */
+    background: #5865F2; /* Bleu Discord */
     color: white;
     text-decoration: none;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
     transition: background 0.3s ease;
 }
 
-#download-latest:hover, .download-old:hover {
-    background: #27ae60;
-}
-
-/* Liste déroulante */
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background: #222;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-select:hover {
-    background: #333;
+.discord-btn:hover {
+    background: #4752C4;
 }
