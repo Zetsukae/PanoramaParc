@@ -91,7 +91,7 @@ body {
 /* ✅ LISTE DEROULANTE (SELECT) */
 select {
     background: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: black;
     border: none;
     padding: 10px;
     border-radius: 8px;
