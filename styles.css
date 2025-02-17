@@ -1,105 +1,48 @@
-/* Style général */
 body {
+    background-image: url('https://i.imgur.com/audGuAN.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
+    color: white;
     text-align: center;
-    background-color: #1e1e1e;
-    color: white;
-    margin: 0;
-    padding: 0;
 }
 
-/* Titre principal */
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-/* Conteneur principal */
 .container {
-    max-width: 600px;
-    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour améliorer la lisibilité */
     padding: 20px;
-    background-color: #2b2b2b;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 50%;
+    margin: 50px auto;
 }
 
-/* Sections */
 h1, h2 {
-    color: #ffcc00;
+    color: #FFD700; /* Couleur or pour un effet style Minecraft */
 }
 
-p {
-    font-size: 16px;
-}
-
-/* Version récente (bouton distinct) */
-.latest-version {
-    background-color: #444;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.latest-version a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #ff6600;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.latest-version a:hover {
-    background-color: #e65c00;
-}
-
-/* Anciennes versions */
-.old-versions {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.select-container {
-    margin: 10px 0;
-}
-
+/* Style du menu déroulant */
 select {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
+    padding: 10px;
     border-radius: 5px;
-    border: none;
-    background-color: #555;
+    border: 2px solid #FFD700;
+    background-color: black;
     color: white;
+    font-size: 16px;
     cursor: pointer;
 }
 
-/* Bouton de téléchargement pour anciennes versions */
-#download-old {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #0084ff;
+/* Style du bouton de téléchargement */
+button {
+    background-color: #32CD32; /* Vert inspiré de l'herbe Minecraft */
+    border: none;
     padding: 10px 15px;
     border-radius: 5px;
+    color: white;
     font-size: 16px;
-    font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-#download-old:hover {
-    background-color: #006bb3;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
+button:hover {
+    background-color: #228B22; /* Vert plus foncé au survol */
 }
