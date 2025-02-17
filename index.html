@@ -8,57 +8,57 @@
 </head>
 <body>
 
-    <h1 class="title">Ancien Parc du Panorama à Vevey, Suisse.</h1>
+    <!-- ✅ Titre principal -->
+    <h1 class="title">Ancien Parc du Panorama à Vevey</h1>
 
+    <!-- ✅ Conteneur principal -->
     <div class="container">
-        <!-- Section Téléchargements -->
+
+        <!-- ✅ Section Téléchargements -->
         <div class="box">
             <h2>Téléchargements</h2>
 
+            <!-- 🔹 Version récente -->
             <div class="latest-version">
                 <h3>Version Récente</h3>
                 <p>La dernière version disponible du parc :</p>
-                <a class="download-button" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld">
-                    Télécharger la Version 0.3
-                </a>
+                <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld" class="button download-button">Télécharger la Version 0.3</a>
             </div>
 
-            <div class="old-versions">
-                <h3>Anciennes Versions</h3>
-                <p>Choisissez une version plus ancienne :</p>
-                <select id="version-select">
-                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Version 0.2</option>
-                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld">Version 0.1</option>
-                </select>
-                <a id="download-old" class="download-button" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Télécharger</a>
-            </div>
+            <!-- 🔹 Anciennes Versions -->
+            <h3>Anciennes Versions</h3>
+            <p>Choisissez une version plus ancienne :</p>
+            <select id="version-select">
+                <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Version 0.2</option>
+                <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld">Version 0.1</option>
+            </select>
+            <br>
+            <a id="download-link" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld" class="button download-button">Télécharger</a>
         </div>
 
-        <!-- Section Patch Notes -->
+        <!-- ✅ Section Patch Notes -->
         <div class="box">
             <h2>Patch Notes</h2>
-            <div class="patch-notes">
-                <h3>Version 0.3</h3>
-                <p>- Ajout de nouvelles attractions</p>
-                <p>- Optimisation des performances</p>
+            
+            <h3>Version 0.3</h3>
+            <p>- Ajout de nouveaux bâtiments<br>- Correction de bugs mineurs</p>
 
-                <h3>Version 0.2</h3>
-                <p>- Corrections de bugs</p>
-                <p>- Amélioration de la texture du parc</p>
+            <h3>Version 0.2</h3>
+            <p>- Optimisation des performances<br>- Ajout de nouvelles textures</p>
 
-                <h3>Version 0.1</h3>
-                <p>- Première version du parc</p>
-            </div>
+            <h3>Version 0.1</h3>
+            <p>- Première version du parc</p>
 
-            <a class="discord-button" href="https://discord.gg/u3SwvGVvGD">
-                Rejoindre notre Discord
-            </a>
+            <!-- 🔹 Bouton Discord -->
+            <a href="https://discord.gg/u3SwvGVvGD" class="button discord-button">Rejoindre notre Discord</a>
         </div>
+
     </div>
 
+    <!-- ✅ Script pour gérer le téléchargement des anciennes versions -->
     <script>
         document.getElementById("version-select").addEventListener("change", function() {
-            document.getElementById("download-old").href = this.value;
+            document.getElementById("download-link").href = this.value;
         });
     </script>
 
