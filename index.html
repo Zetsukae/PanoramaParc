@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancien Parc du Panorama - Vevey</title>
     <link rel="icon" type="image/png" href="https://i.imgur.com/Qy60kML.png">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS externe -->
 </head>
 <body>
     <div class="title">Ancien Parc du Panorama à Vevey, Suisse.</div>
 
-    <div class="container-wrapper">
-        <div class="container">
-            <h1>Version Actuelle</h1>
-            <p>Cliquez pour télécharger la version la plus récente :</p>
-            <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld" download>
-                Télécharger v. 0.3
+    <div class="container">
+        <h1>Téléchargements</h1>
+
+        <!-- Bouton pour la version récente (0.3) -->
+        <div class="latest-version">
+            <h2>Version Récente</h2>
+            <p>La dernière version disponible du parc :</p>
+            <a id="download-latest" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld" download>
+                Télécharger la Version 0.3
             </a>
         </div>
 
-        <div class="container">
-            <h1>Ancienne Version</h1>
-            <p>Choisissez la version à télécharger :</p>
+        <!-- Menu déroulant pour les anciennes versions -->
+        <div class="old-versions">
+            <h2>Anciennes Versions</h2>
+            <p>Choisissez une version plus ancienne :</p>
             <div class="select-container">
                 <select id="version-select">
                     <option value="0.2">Version 0.2</option>
@@ -33,20 +37,6 @@
             </a>
         </div>
     </div>
-
-    <div class="update-container">
-        <h1>Mises à Jour</h1>
-        <div class="update-box">
-            <p><strong>Version 0.3 :</strong> Amélioration des textures, correction de bugs.</p>
-            <p><strong>Version 0.2 :</strong> Ajout de nouvelles zones, optimisation.</p>
-            <p><strong>Version 0.1 :</strong> Première version du parc.</p>
-        </div>
-        <a class="discord-button" href="https://discord.gg/u3SwvGVvGD" target="_blank">
-            Rejoindre notre Discord
-        </a>
-    </div>
-
-    <div class="footer">Créé et supervisé par @Zetsukae</div>
 
     <script>
         function updateDownloadLink() {
@@ -60,10 +50,6 @@
             }
         }
 
-        // Mettre à jour le lien dès le chargement de la page
-        document.addEventListener("DOMContentLoaded", updateDownloadLink);
-
-        // Mettre à jour le lien lorsqu'on change la version
         document.getElementById("version-select").addEventListener("change", updateDownloadLink);
     </script>
 </body>
