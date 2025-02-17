@@ -1,133 +1,105 @@
-/* Styles généraux */
-body { 
-    font-family: Arial, sans-serif; 
-    text-align: center; 
-    background: url('https://i.imgur.com/audGuAN.png') no-repeat center center fixed; 
-    background-size: cover;
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
+/* Titre principal */
 .title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 30px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    margin: 20px 0;
 }
 
 /* Conteneur principal */
-.container-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
 .container {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 350px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-h1 {
-    margin: 0 0 10px;
-    font-size: 24px;
+/* Sections */
+h1, h2 {
+    color: #ffcc00;
 }
 
 p {
     font-size: 16px;
+}
+
+/* Version récente (bouton distinct) */
+.latest-version {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-/* Boutons avec effet 3D */
-a, .download-button { 
-    display: inline-block; 
-    padding: 15px 30px; 
-    background: #4CAF50; 
-    color: white; 
-    text-decoration: none; 
-    font-size: 18px; 
-    border-radius: 8px;
+.latest-version a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #ff6600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-a:hover, .download-button:hover { 
-    background: #45a049; 
-    transform: translateY(-3px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+.latest-version a:hover {
+    background-color: #e65c00;
 }
 
-/* Sélecteur de versions */
+/* Anciennes versions */
+.old-versions {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
 .select-container {
-    margin-top: 15px;
+    margin: 10px 0;
 }
 
 select {
-    padding: 10px;
+    width: 100%;
+    padding: 8px;
     font-size: 16px;
     border-radius: 5px;
     border: none;
-    background: #fff;
-    cursor: pointer;
-}
-
-/* Mise à jour */
-.update-container {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 15px;
-    width: 750px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-}
-
-.update-box {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-/* Bouton Discord */
-.discord-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #5865F2;
+    background-color: #555;
     color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
 }
 
-.discord-button:hover {
-    background: #4852C7;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer */
-.footer {
-    position: absolute;
-    bottom: 10px;
+/* Bouton de téléchargement pour anciennes versions */
+#download-old {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #0084ff;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-size: 16px;
-    opacity: 0.8;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#download-old:hover {
+    background-color: #006bb3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }
