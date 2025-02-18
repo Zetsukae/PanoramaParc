@@ -1,4 +1,5 @@
-parc%20du%20panorama-MC.jpeg
-git rm --cached parc%20du%20panorama-MC.jpeg
-git commit -m "ignorer l'image dans cette branche"
+mv "parc du panorama-MC.jpeg" "parc_du_panorama-MC.jpeg"
+parc_du_panorama-MC.jpeg
+git rm --cached "parc_du_panorama-MC.jpeg"
+git commit -m "ignorer l'image"
 git push origin main
