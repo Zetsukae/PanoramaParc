@@ -7,4 +7,7 @@ images plus récentes du projet:
 ![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/parc.du.panorama3.png)
 ![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/parc.du.panorama4.png)
 ![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/parc.du.panorama5.png)
+vue du dessus:
+![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/parc.du.panorama6.png)
+![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/parc.du.panorama7.png)
 -> Location : Switzerland, Vevey, Parc du panorama.
