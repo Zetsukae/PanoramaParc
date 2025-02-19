@@ -237,3 +237,26 @@ footer {
         height: auto;
     }
 }
+/* Pied de page reste fixe en bas de page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend au moins toute la hauteur de l'écran */
+}
+
+.content {
+    flex: 1; /* Remplit l'espace restant */
+}
+
+footer {
+    background: #000; /* Mets la couleur que tu veux */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
