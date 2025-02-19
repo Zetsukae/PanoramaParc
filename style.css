@@ -58,6 +58,54 @@ body {
     max-width: 800px;
 }
 
+/* ✅ SECTION "NEWS" - Style et position */
+.box.news {
+    order: -1; /* Met la section News en premier sur grand écran */
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ TITRES DES NEWS */
+.box.news h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* ✅ TITRES DES DATES DES NEWS */
+.box.news h3 {
+    font-size: 18px;
+    color: #1db954;
+    margin-top: 10px;
+}
+
+/* ✅ TEXTE DES NEWS */
+.box.news p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* ✅ RESPONSIVE - Sur mobile, la section News sera en haut */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .box.news {
+        order: 0; /* Sur mobile, News s'affichera en premier */
+    }
+}
 /* ✅ STYLES DES BLOCS */
 .box {
     background: rgba(0, 0, 0, 0.85);
