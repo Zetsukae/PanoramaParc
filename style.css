@@ -203,3 +203,37 @@ footer {
     bottom: 0;
     left: 0;
 }
+
+@media (max-width: 768px) {  /* Cible les écrans de moins de 768px (smartphones) */
+    body {
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+
+    .container {
+        width: 90%; /* Réduit la largeur des blocs */@media (max-width: 480px) {  /* Pour les écrans encore plus petits */
+    body {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+        padding: 10px; /* Ajuste les espacements */
+    }
+
+    h1, h2, h3 {
+        font-size: smaller; /* Réduit la taille des titres */
+    }
+
+    button {
+        font-size: 14px; /* Réduit la taille des boutons */
+        padding: 8px 12px; /* Ajuste l'espacement */
+    }
+
+    img {
+        max-width: 100%; /* Empêche les images de dépasser l'écran */
+        height: auto;
+    }
+}
