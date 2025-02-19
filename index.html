@@ -26,67 +26,71 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 </head>
 <body>
 
-    <!-- ✅ Titre principal -->
-    <h1 class="title">Ancien Parc du Panorama à Vevey</h1>
+    <div class="wrapper"> <!-- Ajout d'un conteneur pour gérer l'espace -->
 
-    <!-- ✅ Conteneur principal -->
-    <div class="container">
+        <!-- ✅ Titre principal -->
+        <h1 class="title">Ancien Parc du Panorama à Vevey</h1>
 
-        <!-- ✅ Section News -->
-        <div class="box news">
-            <h2>News</h2>
-            
-            <h3>Prévu le: 20 Février 2025</h3>
-            <p>Ajout d'un port Java.</p>
+        <!-- ✅ Conteneur principal -->
+        <div class="container">
 
-            <h3>18 Février 2025</h3>
-            <p>Correction d'un bug où certaines zones du parc n'apparaissaient pas correctement sur certaines versions de Minecraft. Et correction des grands jeux car les proportions n'étaient pas respectée.</p>
+            <!-- ✅ Section News -->
+            <div class="box news">
+                <h2>News</h2>
+                
+                <h3>Prévu le: 20 Février 2025</h3>
+                <p>Ajout d'un port Java.</p>
 
-            <h3>15 Février 2025</h3>
-            <p>Lancement du projet</p>
-        </div>
+                <h3>18 Février 2025</h3>
+                <p>Correction d'un bug où certaines zones du parc n'apparaissaient pas correctement sur certaines versions de Minecraft. Et correction des grands jeux car les proportions n'étaient pas respectée.</p>
 
-        <!-- ✅ Section Téléchargements -->
-        <div class="box">
-            <h2>Téléchargements</h2>
-
-            <!-- 🔹 Version récente -->
-            <div class="latest-version">
-                <h3>Version Récente</h3>
-                <p>La dernière version disponible du parc :</p>
-                <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.05.mcworld" class="button download-button">Télécharger la Version 0.5</a>
+                <h3>15 Février 2025</h3>
+                <p>Lancement du projet</p>
             </div>
 
-            <!-- 🔹 Anciennes Versions -->
-            <h3>Anciennes Versions</h3>
-            <p>Choisissez une version plus ancienne :</p>
-            <select id="version-select">
-                <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.04.mcworld">Version 0.4</option>
-                <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld">Version 0.3</option>
-                <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Version 0.2</option>
-                <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld">Version 0.1</option>
-            </select>
-            <br>
-            <a id="download-link" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.04.mcworld" class="button download-button">Télécharger</a>
+            <!-- ✅ Section Téléchargements -->
+            <div class="box">
+                <h2>Téléchargements</h2>
+
+                <!-- 🔹 Version récente -->
+                <div class="latest-version">
+                    <h3>Version Récente</h3>
+                    <p>La dernière version disponible du parc :</p>
+                    <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.05.mcworld" class="button download-button">Télécharger la Version 0.5</a>
+                </div>
+
+                <!-- 🔹 Anciennes Versions -->
+                <h3>Anciennes Versions</h3>
+                <p>Choisissez une version plus ancienne :</p>
+                <select id="version-select">
+                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.04.mcworld">Version 0.4</option>
+                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.03.mcworld">Version 0.3</option>
+                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.02.mcworld">Version 0.2</option>
+                    <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld">Version 0.1</option>
+                </select>
+                <br>
+                <a id="download-link" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.04.mcworld" class="button download-button">Télécharger</a>
+            </div>
+
+            <!-- ✅ Section Patch Notes -->
+            <div class="box">
+                <h2>Patch Notes</h2>
+                
+                <h3>Version 0.5</h3>
+                <p>- Ajout de l'école.<br>- Correction de bugs mineurs, optimisation.</p>
+
+                <!-- 🔹 Bouton Discord -->
+                <a href="https://discord.gg/u3SwvGVvGD" class="button discord-button">Rejoindre notre Discord</a>
+            </div>
+
         </div>
 
-        <!-- ✅ Section Patch Notes -->
-        <div class="box">
-            <h2>Patch Notes</h2>
-            
-            <h3>Version 0.5</h3>
-            <p>- Ajout de l'école.<br>- Correction de bugs mineurs, optimisation.</p>
-
-            <!-- 🔹 Bouton Discord -->
-            <a href="https://discord.gg/u3SwvGVvGD" class="button discord-button">Rejoindre notre Discord</a>
-        </div>
-
-    </div>
+    </div> <!-- Fin du conteneur wrapper -->
 
     <!-- ✅ Pied de page -->
     <footer>
         <p>© 2025 Uniware, Zetsukae. Ce projet est sous licence <a href="LICENSE">GPL v3</a>.  
-Minecraft est une marque déposée de Mojang AB. Voir <a href="https://www.minecraft.net/en-us/terms">leur politique</a>.</p>
+        Minecraft est une marque déposée de Mojang AB. Voir <a href="https://www.minecraft.net/en-us/terms">leur politique</a>.</p>
     </footer>
 
     <!-- ✅ Script pour gérer le téléchargement des anciennes versions -->
