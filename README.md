@@ -14,5 +14,5 @@ vue du dessus:
 
 Préview et patch avant upload de la v. 0.6 (ALPHA sans SHADERS) :
 ![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/patch.mc.panorama.v.06ALPHA.jpg)
-voir la vidéo :
+Vidéo d'aprçu :
 [voir la vidéo](https://youtu.be/vChzTTw5Cgo?si=zkcHYiChUlEjaLku)
