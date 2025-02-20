@@ -16,3 +16,4 @@ Préview et patch avant upload de la v. 0.6 (ALPHA sans SHADERS) :
 ![Screenshot ja](https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/patch.mc.panorama.v.06ALPHA.png)
 Vidéo d'aprçu :
 [voir la vidéo](https://youtu.be/vChzTTw5Cgo?si=zkcHYiChUlEjaLku)
+![Custom badge](https://img.shields.io/badge/La-version-0.6-est-disponible-sur-le-site-red)
