@@ -20,46 +20,34 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancien Parc du Panorama - Téléchargements</title>
+    <title>Ancien Parc du Panorama - Téléchargements</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://i.imgur.com/Qy60kML.png">
 </head>
 <body>
 
-    <div class="wrapper"> <!-- Ajout d'un conteneur pour gérer l'espace -->
+    <div class="wrapper">
+        <h1 class="title">Ancien Parc du Panorama à Vevey</h1>
 
-        <!-- ✅ Titre principal -->
-        <h1 class="title">Ancien Parc du Panorama à Vevey</h1>
-
-        <!-- ✅ Conteneur principal -->
         <div class="container">
-
-            <!-- ✅ Section News -->
             <div class="box news">
                 <h2>News</h2>
-                
-                <h3>[reporté] Prévu le: 20 Février 2025</h3>
+                <h3>[reporté] Prévu le: 20 Février 2025</h3>
                 <p>Ajout d'un port Java.</p>
-
-                <h3>18 Février 2025</h3>
-                <p>Correction d'un bug où certaines zones du parc n'apparaissaient pas correctement sur certaines versions de Minecraft. Et correction des grands jeux car les proportions n'étaient pas respectée.</p>
-
-                <h3>15 Février 2025</h3>
+                <h3>18 Février 2025</h3>
+                <p>Correction d'un bug où certaines zones du parc n'apparaissaient pas correctement sur certaines versions de Minecraft. Et correction des grands jeux car les proportions n'étaient pas respectées.</p>
+                <h3>15 Février 2025</h3>
                 <p>Lancement du projet</p>
             </div>
 
-            <!-- ✅ Section Téléchargements -->
             <div class="box">
-                <h2>Téléchargements</h2>
-
-                <!-- 🔹 Version récente -->
+                <h2>Téléchargements</h2>
                 <div class="latest-version">
-                    <h3>Version Récente</h3>
-                    <p>La dernière version disponible du parc :</p>
-                    <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.06.mcworld" class="button download-button">Télécharger la Version 0.6</a>
+                    <h3>Version Récente</h3>
+                    <p>La dernière version disponible du parc :</p>
+                    <a href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.06.mcworld" class="button download-button">Télécharger la Version 0.6</a>
                 </div>
 
-                <!-- 🔹 Anciennes Versions -->
                 <h3>Anciennes Versions</h3>
                 <p>Choisissez une version plus ancienne :</p>
                 <select id="version-select">
@@ -70,41 +58,33 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
                     <option value="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.mcworld">Version 0.1</option>
                 </select>
                 <br>
-                <a id="download-link" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.05.mcworld" class="button download-button">Télécharger</a>
+                <a id="download-link" href="https://github.com/Zetsukae/OldPanoramaParc/releases/download/file/Ancien.parc.du.Panorama.Vevey.v.05.mcworld" class="button download-button">Télécharger</a>
             </div>
 
-            <!-- ✅ Section Patch Notes -->
             <div class="box">
                 <h2>Patch Notes</h2>
-                
                 <h3>Version 0.6</h3>
                 <p>- Ajout du terrain de foot, et plus...<br>- Correction de bugs majeurs, optimisation.</p>
-
-                <!-- 🔹 Bouton Discord -->
                 <a href="https://discord.gg/u3SwvGVvGD" class="button discord-button">Rejoindre notre Discord</a>
             </div>
-
         </div>
+    </div>
 
-    </div> <!-- Fin du conteneur wrapper -->
-
-    <!-- ✅ Pied de page -->
     <footer>
         <p><a href="https://github.com/Zetsukae/OldPanoramaParc">Lien Github</a>. © 2025 Uniware, Zetsukae. Ce projet est sous licence <a href="LICENSE">GPL v3</a>.  
-        Minecraft est une marque déposée de Mojang AB. Voir <a href="https://www.minecraft.net/en-us/terms">leur politique</a>.</p>
+        Minecraft est une marque déposée de Mojang AB. Voir <a href="https://www.minecraft.net/en-us/terms">leur politique</a>.</p>
     </footer>
 
-    <!-- ✅ Script pour gérer le téléchargement des anciennes versions -->
-<script>
-  // Gestion du téléchargement des anciennes versions
-  document.getElementById("version-select").addEventListener("change", function() {
-    document.getElementById("download-link").href = this.value;
-  });
+    <script>
+        // Gestion du téléchargement des anciennes versions
+        document.getElementById("version-select").addEventListener("change", function() {
+            document.getElementById("download-link").href = this.value;
+        });
 
-  // Redirection si l'utilisateur est sur mobile
-  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = "mobile.html"; // Redirection vers la page mobile
-  }
-</script>
+        // Redirection si l'utilisateur est sur mobile
+        if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            window.location.href = "mobile.html";
+        }
+    </script>
 </body>
 </html>
