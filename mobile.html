@@ -1,6 +1,13 @@
 Passez en mode bureau (ordinateur) pour accéder au site.
-<script>
-  if (!/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = "index.html"; // Retour en mode bureau
-  }
-</script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès restreint</title>
+</head>
+<body>
+    <h1>Passez en mode ordinateur pour accéder au site</h1>
+    <button onclick="window.location.href = 'index.html';">Passer en mode bureau</button>
+</body>
+</html>
