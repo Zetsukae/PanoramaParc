@@ -53,6 +53,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px; /* Espace entre les boîtes */
     flex-wrap: wrap;
     max-width: 800px;
@@ -100,6 +101,8 @@ body {
 
     .box {
         width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .box.news {
