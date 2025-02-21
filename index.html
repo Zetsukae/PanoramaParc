@@ -95,11 +95,16 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     </footer>
 
     <!-- ✅ Script pour gérer le téléchargement des anciennes versions -->
-    <script>
-        document.getElementById("version-select").addEventListener("change", function() {
-            document.getElementById("download-link").href = this.value;
-        });
-    </script>
+<script>
+  // Gestion du téléchargement des anciennes versions
+  document.getElementById("version-select").addEventListener("change", function() {
+    document.getElementById("download-link").href = this.value;
+  });
 
+  // Redirection si l'utilisateur est sur mobile
+  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = "mobile.html"; // Redirection vers la page mobile
+  }
+</script>
 </body>
 </html>
