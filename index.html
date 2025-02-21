@@ -86,5 +86,19 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
             window.location.href = "mobile.html";
         }
     </script>
+    <script>
+  // Vérifie l'URL actuelle
+  let currentPage = window.location.pathname.split("/").pop();
+  if (currentPage === "") currentPage = "index.html"; // Gérer l'absence de fichier dans l'URL
+
+  // Vérifie si l'utilisateur est sur un appareil mobile
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isSmallScreen = window.innerWidth <= 1024; // Vérifie si l'écran est petit
+
+  // Si l'utilisateur est sur "index.html" et est mobile (ou petit écran), redirige vers "mobile.html"
+  if (currentPage === "index.html" && (isMobile || isSmallScreen)) {
+    window.location.href = "mobile.html";
+  }
+</script>
 </body>
 </html>
