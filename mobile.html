@@ -1,13 +1,30 @@
-Passez en mode bureau (ordinateur) pour accéder au site.
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accès restreint</title>
+    <title>Ancien Parc du Panorama - Mobile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Passez en mode bureau (ordinateur) pour accéder au site</h1>
-    <button onclick="window.location.href = 'index.html';">Passer en mode bureau</button>
+
+    <h1>Bienvenue sur la version mobile</h1>
+    <p>Cette page est optimisée pour les mobiles.</p>
+    <a href="https://discord.gg/u3SwvGVvGD" class="button discord-button">Rejoindre notre Discord</a>
+
+    <script>
+        function checkDevice() {
+            if (!/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                window.location.href = "index.html"; // Redirection vers le site normal
+            }
+        }
+
+        // Vérifier au chargement
+        checkDevice();
+
+        // Vérifier au redimensionnement (utile pour émulateurs ou basculement mobile/PC)
+        window.addEventListener("resize", checkDevice);
+    </script>
+
 </body>
 </html>
